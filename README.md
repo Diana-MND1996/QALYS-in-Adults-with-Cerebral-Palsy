@@ -12,7 +12,7 @@ This repository contains the original data and R code to reproduce the analyses 
 ## Table of contents
 - [Data](#data)
 - [1. Descriptive analysis](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/842cff6a10deef26277e7dd7961540bb45c62023/1_DescriptiveAnalysis.R)
-- [2a. Variable Selection: OLS](#2a-variable-selection-ols)
+- [2a. Variable Selection: OLS](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/842cff6a10deef26277e7dd7961540bb45c62023/2a_VariableSelection_OLS.R)
 - [2b. Variable Selection: GLM](#2b-variable-selection-glm)
 - [2c. Variable Selection: Tobit](#2c-variable-selection-tobit)
 - [3. Mapping models](#3-mapping-models)
