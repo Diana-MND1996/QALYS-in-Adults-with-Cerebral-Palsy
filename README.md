@@ -17,7 +17,7 @@ This repository contains the original data and R code to reproduce the analyses 
 - [2c. Variable Selection: Tobit](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/842cff6a10deef26277e7dd7961540bb45c62023/2c_VariableSelection_Tobit.R)
 - [3. Mapping models](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/842cff6a10deef26277e7dd7961540bb45c62023/3_Mapping.R)
 - [4. Cross-validation](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/842cff6a10deef26277e7dd7961540bb45c62023/4_CrossValidation.R)
-- [5. Calculator_STMQOL_EQ-5D]
+- [5. Calculator_STMQOL_EQ-5D](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/61bcd1cc2aa1d92947ac8ae955857d70ad5d587c/Calculator_STMQOL_EQ-5D.xlsm)
 
 ---
 
