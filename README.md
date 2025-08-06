@@ -10,7 +10,7 @@ This repository contains the original data and R code to reproduce the analyses 
 ---
 
 ## Table of contents
-- [Data](#data)
+- [Data](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/c898a0085bd49a6c8c11fcc93808cdd22c5aed8a/Data_EQ5DSTMF.Rdata)
 - [1. Descriptive analysis](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/842cff6a10deef26277e7dd7961540bb45c62023/1_DescriptiveAnalysis.R)
 - [2a. Variable Selection: OLS](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/842cff6a10deef26277e7dd7961540bb45c62023/2a_VariableSelection_OLS.R)
 - [2b. Variable Selection: GLM](https://github.com/Diana-MND1996/QALYS-in-Adults-with-Cerebral-Palsy/blob/842cff6a10deef26277e7dd7961540bb45c62023/2b_VariableSelection_GLM.R)
