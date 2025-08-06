@@ -81,3 +81,8 @@ str(Database)
 # STMartin.SUM: Sum of all domain scores (St. MQoL-S)
 # STMartin.INDEX: Overall St. MQoL-S quality of life score
 # STMartin.INDEX.scaled: Scaled total score in the [0,1] interval
+
+library(xlsx)
+
+Database <- read.xlsx("Data_EQ5DSTMF.xlsx", sheetIndex=1)
+str(Database)
