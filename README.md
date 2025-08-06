@@ -25,11 +25,5 @@ This repository contains the original data and R code to reproduce the analyses 
 
 Data were collected from 72 participants in the Study of Adults with Cerebral Palsy in Navarre, Spain (EPCANA), who completed both the St. MQoL-S and the EQ-5D-5L survey instruments simultaneously.
 
-It can be loaded in R by using the command:
 
-```r
-library(xlsx)
-
-Database <- read.xlsx("Data_EQ5DSTMF.xlsx", sheetIndex=1)
-str(Database)
 
