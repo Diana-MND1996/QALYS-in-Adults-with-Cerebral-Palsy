@@ -26,13 +26,13 @@ This repository contains the original data and R code to reproduce the analyses 
 Data were collected from 72 participants in the Study of Adults with Cerebral Palsy in Navarre, Spain (EPCANA), who completed both the St. MQoL-S and the EQ-5D-5L survey instruments simultaneously.
 
 ```r
-# 📦 Carga de librería y base de datos
+# 📦 Load required library and import the dataset
 library(xlsx)
 
 Database <- read.xlsx("Data_EQ5DSTMF.xlsx", sheetIndex = 1)
 str(Database)
 
-# ▶️ Estructura del objeto Database
+# ▶️ Structure of the Database object
 # 'data.frame':   72 obs. of  22 variables:
 #  $ ID                   : chr  "14" "62" "63" "44" ...
 #  $ SEX                  : chr  "1" "1" "0" "0" ...
@@ -57,31 +57,27 @@ str(Database)
 #  $ STMartin.INDEX       : num  82 82 85 99 ...
 #  $ STMartin.INDEX.scaled: num  0.375 0.375 0.412 ...
 
-# 🧾 Descripción de las variables del objeto Database
+# 🧾 Variable definitions
 
-# ID: Identificador del paciente (carácter)
-# SEX: Sexo del paciente (0 = “Femenino”, 1 = “Masculino”)
-# AGE: Edad del paciente (años)
-# CITY: Lugar de residencia (0 = “fuera de la ciudad”, 1 = “dentro de la ciudad”)
-# CPT: Tipo de parálisis cerebral
-# RLD: Nivel reconocido de dependencia (1 = “Leve”, 2 = “Moderado”, 3 = “Severo”)
-# TIME: Tiempo de afiliación a la institución (años)
-# INST: Grado de institucionalización (INST = TIME / AGE)
-# TOTAL.EQ: Puntaje total de las dimensiones del EQ-5D-5L
-# EVA: Escala Visual Analógica (0 = peor estado, 100 = mejor estado)
-# EQ.INDEX: Índice de salud calculado con EQ-5D-5L
-# STMartin.SD: Dominio de autodeterminación (St. MQoL-S)
-# STMartin.EW: Dominio de bienestar emocional (St. MQoL-S)
-# STMartin.PW: Dominio de bienestar físico (St. MQoL-S)
-# STMartin.MW: Dominio de bienestar material (St. MQoL-S)
-# STMartin.RI: Dominio de derechos (St. MQoL-S)
-# STMartin.PD: Dominio de desarrollo personal (St. MQoL-S)
-# STMartin.IR: Dominio de relaciones interpersonales (St. MQoL-S)
-# STMartin.SI: Dominio de inclusión social (St. MQoL-S)
-# STMartin.SUM: Suma de todos los dominios del St. MQoL-S
-# STMartin.INDEX: Puntaje total de calidad de vida según St. MQoL-S
-# STMartin.INDEX.scaled: Puntaje total escalado al intervalo [0,1]
-
-
-
-
+# ID: Unique patient identifier (character)
+# SEX: Gender of the patient (0 = “Female”, 1 = “Male”)
+# AGE: Age of the patient (years)
+# CITY: Place of residence (0 = “Outside the city”, 1 = “Inside the city”)
+# CPT: Type of cerebral palsy
+# RLD: Recognized level of dependency (1 = “Mild”, 2 = “Moderate”, 3 = “Severe”)
+# TIME: Length of institutional affiliation (years)
+# INST: Degree of institutionalization (INST = TIME / AGE)
+# TOTAL.EQ: Total EQ-5D-5L dimension score
+# EVA: Visual Analog Scale (0 = Worst health state, 100 = Best health state)
+# EQ.INDEX: EQ-5D-5L health index
+# STMartin.SD: Self-determination domain (St. MQoL-S)
+# STMartin.EW: Emotional well-being domain (St. MQoL-S)
+# STMartin.PW: Physical well-being domain (St. MQoL-S)
+# STMartin.MW: Material well-being domain (St. MQoL-S)
+# STMartin.RI: Rights domain (St. MQoL-S)
+# STMartin.PD: Personal development domain (St. MQoL-S)
+# STMartin.IR: Interpersonal relationships domain (St. MQoL-S)
+# STMartin.SI: Social inclusion domain (St. MQoL-S)
+# STMartin.SUM: Sum of all domain scores (St. MQoL-S)
+# STMartin.INDEX: Overall St. MQoL-S quality of life score
+# STMartin.INDEX.scaled: Scaled total score in the [0,1] interval
