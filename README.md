@@ -83,34 +83,3 @@ str(Database)
 #  STMartin.INDEX.scaled : Scaled total score in the [0,1] interval
 
 
-**Mapping Algorithm**
-Examples of the mapping algorithm
-Or best mapping algorithm (OLS - Model 1) can be described as:
-
-<img width="1226" height="128" alt="image" src="https://github.com/user-attachments/assets/adac21de-343b-49ac-be47-0f16e282e8ed" />
-
-After fitting the model, predictions of EQ-5D-5L utility values for an adult person with cerebral palsy can be obtained as follows:
-
-## Fit the core model providing the best mapping algorithm: OLS - Model 1 ##
-Model.final <- lm(EQ.INDEX ~ STMartin.INDEX + AGE + SEX + CPT, data=Database)
-
-## EXAMPLE 1:
-## - Prediction for a female (SEX="0") who has a St. MQoL-S total score of 106,
-##   30 years old, and has a CP of the spastic type (CPT="1")
-newdata <- data.frame(STMartin.INDEX=106, SEX="0", AGE=30, CPT="1")
-newdata$EQ.INDEX <- predict(Model.final, newdata, interval="confidence")
-
-print(newdata)
-
-  STMartin.INDEX SEX AGE CPT EQ.INDEX.fit EQ.INDEX.lwr EQ.INDEX.upr
-1            106   0  30   1    0.3357393    0.2738009    0.3976776
-## EXAMPLE 2:
-## - Prediction for a male (SEX="1") who has a St. MQoL-S total score of 100,
-##   40 years old, and has a CP of the dyskinetic type (CPT="2")
-newdata <- data.frame(STMartin.INDEX=100, SEX="1", AGE=40, CPT="2")
-newdata$EQ.INDEX <- predict(Model.final, newdata, interval="confidence")
-
-print(newdata)
-
-  STMartin.INDEX SEX AGE CPT EQ.INDEX.fit EQ.INDEX.lwr EQ.INDEX.upr
-1            100   1  40   2    0.3388744    0.1857931    0.4919557
