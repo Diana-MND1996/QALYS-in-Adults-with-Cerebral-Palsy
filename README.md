@@ -59,30 +59,25 @@ str(Database)
 
 # 🧾 Variable definitions
 
-# ID: Unique patient identifier (character)
-# SEX: Gender of the patient (0 = “Female”, 1 = “Male”)
-# AGE: Age of the patient (years)
-# CITY: Place of residence (0 = “Outside the city”, 1 = “Inside the city”)
-# CPT: Type of cerebral palsy
-# RLD: Recognized level of dependency (1 = “Mild”, 2 = “Moderate”, 3 = “Severe”)
-# TIME: Length of institutional affiliation (years)
-# INST: Degree of institutionalization (INST = TIME / AGE)
-# TOTAL.EQ: Total EQ-5D-5L dimension score
-# EVA: Visual Analog Scale (0 = Worst health state, 100 = Best health state)
-# EQ.INDEX: EQ-5D-5L health index
-# STMartin.SD: Self-determination domain (St. MQoL-S)
-# STMartin.EW: Emotional well-being domain (St. MQoL-S)
-# STMartin.PW: Physical well-being domain (St. MQoL-S)
-# STMartin.MW: Material well-being domain (St. MQoL-S)
-# STMartin.RI: Rights domain (St. MQoL-S)
-# STMartin.PD: Personal development domain (St. MQoL-S)
-# STMartin.IR: Interpersonal relationships domain (St. MQoL-S)
-# STMartin.SI: Social inclusion domain (St. MQoL-S)
-# STMartin.SUM: Sum of all domain scores (St. MQoL-S)
-# STMartin.INDEX: Overall St. MQoL-S quality of life score
-# STMartin.INDEX.scaled: Scaled total score in the [0,1] interval
-
-library(xlsx)
-
-Database <- read.xlsx("Data_EQ5DSTMF.xlsx", sheetIndex=1)
-str(Database)
+#  ID                    : Unique patient identifier (character)
+#  SEX                   : Gender of the patient (0 = “Female”, 1 = “Male”)
+#  AGE                   : Age of the patient (years)
+#  CITY                  : Place of residence (0 = “Outside the city”, 1 = “Inside the city”)
+#  CPT                   : Type of cerebral palsy
+#  RLD                   : Recognized level of dependency (1 = “Mild”, 2 = “Moderate”, 3 = “Severe”)
+#  TIME                  : Length of institutional affiliation (years)
+#  INST                  : Degree of institutionalization (INST = TIME / AGE)
+#  TOTAL.EQ              : Total EQ-5D-5L dimension score
+#  EVA                   : Visual Analog Scale (0 = Worst health state, 100 = Best health state)
+#  EQ.INDEX              : EQ-5D-5L health index
+#  STMartin.SD           : Self-determination domain (St. MQoL-S)
+#  STMartin.EW           : Emotional well-being domain (St. MQoL-S)
+#  STMartin.PW           : Physical well-being domain (St. MQoL-S)
+#  STMartin.MW           : Material well-being domain (St. MQoL-S)
+#  STMartin.RI           : Rights domain (St. MQoL-S)
+#  STMartin.PD           : Personal development domain (St. MQoL-S)
+#  STMartin.IR           : Interpersonal relationships domain (St. MQoL-S)
+#  STMartin.SI           : Social inclusion domain (St. MQoL-S)
+#  STMartin.SUM          : Sum of all domain scores (St. MQoL-S)
+#  STMartin.INDEX        : Overall St. MQoL-S quality of life score
+#  STMartin.INDEX.scaled : Scaled total score in the [0,1] interval
